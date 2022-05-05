@@ -1,0 +1,340 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+@media screen and (max-width: 480px){
+    body{
+        background-color: rgb(175, 242, 247);
+    }
+
+
+
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #Datos_Principales{
+
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Datos_Principales h3{
+        font-size: 72px;
+    }
+
+    #Datos_Principales p{
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+    #Conocimiento{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+        width: 100%;
+    }
+
+    #Conocimiento .qw{
+
+        margin-left: 45px;
+    }
+
+    #Conocimiento h1{
+
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #Conocimiento h2{
+
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+
+    #Pie{
+
+        display: flex;
+        background-color: rgb(145, 145, 145);
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #ha{
+        background-color: rgb(145, 145, 145);
+        font-size: 55px;
+        /* margin: 20px 20px; */
+        width: 100%;
+        padding: 20px
+    }
+
+    footer{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    input{
+        width: 40%;
+        height: 20%;
+    }
+
+    textarea{
+        width: 60%;
+        height: 110px;
+    }
+
+}
+
+@media screen and (min-width: 481px){
+    body{
+        background-color: rgb(175, 242, 247);
+        margin: 10%;
+    }
+
+
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+ 
+    }
+
+    #Datos_Principales{
+
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        padding-top: 30px;
+    }
+
+    #Datos_Principales h3{
+        font-size: 72px;
+    }
+
+    #Datos_Principales p{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #Pie p{
+
+        font-size: 2em;
+
+    }
+
+    #Conocimiento{
+        display: flex;
+        flex-direction: column;
+        /* margin: 10px 20px; */
+        width: 60%;
+        background-color: #ffffff;
+    }
+
+    #Conocimiento .qw{
+        font-size: 2.24em;
+        margin-left: 45px;
+    }
+
+    #Conocimiento h1{
+
+        text-align: center;
+        font-size: 3em;
+    }
+
+    #Conocimiento h2{
+
+        text-align: center;
+        font-size: 2.8em;
+    }
+    #Conocimiento h3{
+        font-size: 2.5em;
+        margin-left: 10px;
+    }
+
+
+    #Pie{
+
+        display: flex;
+        background-color: rgb(145, 145, 145);
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #ha{
+        background-color: rgb(145, 145, 145);
+        font-size: 55px;
+        /* margin: 20px 20px; */
+        width: 100%;
+        padding: 20px
+    }
+
+    footer{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    input{
+        width: 40%;
+        height: 20%;
+    }
+
+    textarea{
+        width: 60%;
+        height: 110px;
+    }
+
+}
+
+/*    
+    h1{
+    
+        font-weight: bold;
+        margin-left: 60px;
+        margin-top: 25px;
+        font-size: 40px;
+    }
+    
+    h2{
+    
+        font-weight: bold;
+        margin-left: 120px;
+    
+    }
+    
+    h3{
+    
+        margin-left: 10px;
+        font-weight: cursive;
+    
+    }
+    .negrilla{
+    
+        font-weight: bold;
+    
+    }
+    
+    p{
+    
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+    
+    body{
+    
+        background-color: lightblue;
+        font-family: verdana, geneva, tahoma, sans-serif;
+    
+    
+        margin-right: 20%;
+        margin-top: 10%;
+        margin-left:  20%;
+        margin-bottom:  10%;
+    }
+    
+    #Datos_Principales{
+        width: 40%;
+        float: left;
+        
+        height: 680px;
+        background-color: #e3e3e3;
+    
+    }
+    
+    #Conocimiento{
+        width: 60%;
+        float: right;
+        float: bottom;
+        background-color: #ffffff;
+        height: 680px;
+        
+    
+    }
+    
+    #Pie{
+    
+        width: 100%;
+        display: flex;
+        float: top;
+        font-size: 22px;
+        /* height: 100%;         background-color: #d9d9d9;
+        /* padding-bottom: 20%; 
+        align-content: stretch;
+    
+    }
+    
+    .barra{
+    
+        background-color: red;
+        border-radius: 100%;
+        width: 20%;
+        float: top;
+    
+    }
+    
+    progress{
+    
+        float: left;
+        width: 12%;
+        position: absolute;
+        color: #8a7df8;
+        margin-left: 2%;
+    
+    }
+    
+    .iz{
+    
+        float: left;
+        
+    
+    }
+    
+    .de{
+    
+        float: right;
+        margin-right: 35%;;
+        
+    }
+    */
+    
+    .datos{
+        background-color: white; padding: 10%; margin-bottom: 20px;
+
+    }
+    .datos p{
+
+        margin-bottom: 10px;
+
+    }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Registrados</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+  
+   <% for (const r of info) { %>
+    <div class="datos">
+        <h2>NOMBRE: </h2><p><%=r.nombre%></p>
+        <h2>Gmail: </h2><p><%=r.gmail%></p>
+        <h2>COMENTARIO: </h2><p><%=r.comentario%></p>
+        <h2>FECHA: </h2><p><%=r.fecha%></p>
+        <h2>HORA: </h2><p><%=r.hora%></p>
+        <h2>IP: </h2><p><%=r.ip%></p>
+   </div>
+    <% } %>
+  
+</body>
+</html>
