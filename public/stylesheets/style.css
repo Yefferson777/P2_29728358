@@ -5,6 +5,40 @@
         box-sizing: border-box;
     }
     
+.idioma{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(229, 229, 186);
+    border: 3px solid black;
+    border-bottom: none;
+    padding: 0 10px;
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    font-size: 22px;
+    transition: .5s ease;
+}
+
+.idioma img{
+
+width: 48px;
+height: 48px;
+
+}
+.boton_idioma{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.idioma:hover{
+
+    background-color: #fffddf;
+    padding-bottom: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 480px){
     body{
         background-color: rgb(175, 242, 247);

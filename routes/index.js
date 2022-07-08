@@ -6,7 +6,16 @@ const sqlite3 = require("sqlite3").verbose();
 const path = require("path");
 const database = path.join(__dirname,"database","base.db");
 
+
+const { I18n } = require('i18n');
+  const i18n = new I18n({
+    locales: ['es', 'en'],
+    directory: path.join(__dirname, '/language'),
+    defaultLocale: 'es',
+  });
+let lang = "";
 const base = new sqlite3.Database(database, err => {
+
 
  if (err)
   {
@@ -84,7 +93,7 @@ base.run(consulta,datos,err => {
      return console.error(err.message);
    } 
    else{
-    res.redirect("/contactos"); 
+    res.redirect("/"); 
     console.log("Se contacto con Exito");
    }
  
@@ -108,8 +117,26 @@ router.get("/contactos", (req, res, next) => {
   });
 });
 
+router.get('/es-en',(req,res,next)=>{
+  
+  if(lang){
+    i18n.init(req, res)
+    res.setLocale('en');
+    res.render('index.ejs', {info:{},bandera:"/imagen/eeuu.png"});
+    lang = false;
+  }
+  else if(!lang){
+    i18n.init(req, res)
+    res.setLocale('es');
+    res.render('index.ejs', {info:{},bandera:"/imagen/es.png"});
+    lang = true;
+  }
+});
+
 router.get('/',(req,res,next)=>{
-	res.render('index.ejs', {info:{}});
+  i18n.init(req, res);
+  lang = req.acceptsLanguages('es');
+	res.render('index.ejs', {info:{}, bandera:"/imagen/es.png"});
 });
 
 module.exports = router;

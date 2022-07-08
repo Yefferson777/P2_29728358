@@ -8,6 +8,9 @@
 
 </head>
 <body>
+	<div style="display: flex;justify-content: flex-end;"><a class="boton_idioma" href="/es-en">
+		<div class="idioma"><img src="<%=bandera%>" alt=""><%=__('idioma')%></div></a>
+	</div>
 <div class="contenedor">
 	<div id="Datos_Principales">
 
@@ -19,18 +22,17 @@
 
 		<br>
 
-		 <h3>Sobre mí... </h3> <br>
-		  <p>Programador Junior con mediana experiencia en ambientes laborales. Con un  gran sentido de resolución de problemas y responsabilidad. Con conocimientos en el área eléctrica y electrónica que permite un desenvolvimiento optimo como Técnico Medio en Electricidad. Líder de Proyectos. Con experiencia independiente en el desarrollo de videojuegos.
-		  </p>
+		 <h3><%=__('tituloSobremi')%></h3> <br>
+		  <p><%=__('sobremi')%></p>
 
 		<br><br>
 
-		<h3>Contacto</h3>
+		<h3><%=__('contacto')%></h3>
 		<br>
 		<div class="contacto">
-			<p> Nombre: Yefferson Daniel Barrio Quero.<br>
-				Ubicación: Venezuela, Edo. Aragua.<br>
-				Teléfono: +58 426-4484916<br>
+			<p> <%=__('nombre')%>: Yefferson Daniel Barrio Quero.<br>
+				<%=__('ubicacion')%>: Venezuela, Edo. Aragua.<br>
+				<%=__('telefono')%>: +58 426-4484916<br>
 				Gmail: <a href="yefferriobn17@gmail.com">yefferriobn17@gmail.com</a>
 			</p>
 		</div>
@@ -43,45 +45,43 @@
 
 
 		<h1><i>Yefferson Barrio</i></h1>
-		<h2><i>Programador</i></h2><br>
+		<h2><i><%=__('programador')%></i></h2><br>
 
 		
 
 		
 		  <div>
-			<h3>Experiencia Laborales</h3><br>
-			<p class="qw">	Villapet – Villa de Cura<br>
-				Junio  2021 – Actualidad<br>
-				Operador de maquinaria<br>
-				Ayudante General<br>
-				Encargado de Inventario<br>
-				<br>
-				Calidra – Villa de Cura<br>
-				Marzo 2020 – Abril 2020<br>
-				Creación de tableros eléctricos.<br>
-				Construcción de Herramientas de Utilidad empresarial.<br>
-				Revisión y actualización de planos eléctricos.<br>
-				Re creación de tablero eléctrico de mando completo.<br>
+			<h3><%=__('tituloExperiencia')%></h3><br>
+			<p class="qw">
+				<%=__('experiencia_empresa1')%>
+				<%=__('experiencia_cargo1_1')%>
+				<%=__('experiencia_cargo1_2')%>
+				<%=__('experiencia_cargo1_3')%>
+				<br><br>
+				<%=__('experiencia_empresa2')%>
+				<%=__('experiencia_cargo2_1')%>
+				<%=__('experiencia_cargo2_2')%>
+				<%=__('experiencia_cargo2_3')%>
+				<%=__('experiencia_cargo2_4')%>
 			</p>
 
 			<br>
 		  </div>
 		
-			<h3>Educación</h3><br>
-		  <div class="qw">
+			<h3><%=__('educacion')%></h3><br>
+		<p class="qw">
 			
-			<p>Ingeniería en Informática<br>
-			Universidad Rómulo Gallegos<br>
-			Septiembre 2020 – Actualidad<br>
-			</p>
-			<br>
-			<p>Técnico Medio en Electricidad<br>
-			Escuela Técnica Privada “San Luis Rey”<br>
-			Septiembre 2014 – Julio 2020<br>
-			</p>
-		  </div>
+			<%=__('uni_carrera')%>
+			<%=__('uni')%>
+			<%=__('uni_tiempo')%>
+			<br><br>
+			<%=__('tecnico')%>
+			<%=__('tecnico_lugar')%>
+			<%=__('tecnico_tiempo')%>
+
+		</p>
 	</div>	
-	<h3 id = "ha">Habilidades</h3>	
+	<h3 id = "ha"><%=__('habilidades')%></h3>	
 	<div  id="Pie">
 
 	  
@@ -103,22 +103,22 @@
 </div>
 	<footer>
 		<form action="/" method="post">
-			<input name="nombre" type="text" placeholder="Nombre" value="<%= info.nombre%>">
+			<input name="nombre" type="text" placeholder="<%=__('nombre')%>" value="<%= info.nombre%>">
 			<input name="gmail"  type="email" placeholder="Gmail" value="<%= info.gmail%>">
 
-			<textarea name="comentario" value="<%= info.comentario%>">Contactame por Aca!!</textarea>
+			<textarea name="comentario" value="<%= info.comentario%>"><%=__('hablame')%></textarea>
 
-			<input type="submit" value="ENVIAR">
 			<input type="hidden" name="ip" value="<%= info.ip%>">
 			<input type="hidden" name="fecha" value="<%= info.fecha%>">
 			<input type="hidden" name="hora" value="<%= info.hora%>">
-
-
+			<input type="submit" value="<%=__('enviar')%>">
 		</form>
-
+		
 
 	</footer>
 
+
+	
 
 </body>
 </html>
